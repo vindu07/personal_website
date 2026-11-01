@@ -7,9 +7,10 @@
 
   <link href="/style.css" rel="stylesheet">
 
-  <link rel="prefetch" href="/about">
-  <link rel="prefetch" href="/projects">
-  <link rel="preload" href="/contact">
+  <link rel="prefetch" href="/about" as="document">
+  <link rel="prefetch" href="/skills" as="document">
+  <link rel="prefetch" href="/projects" as="document">
+  <link rel="prefetch" href="/contact" as="document">
 </head>
 
 <body class="">
@@ -54,7 +55,9 @@
         </div>
       </button>
       <button id="download-cv-btn" class="accent">
-        <p>Download CV</p>
+        <a href="/documents/Andrea_Vinduska.pdf" download>
+          <p>Download CV</p>
+        </a>
       </button>
     </div>
       
@@ -77,6 +80,10 @@
 <button><a href="/contact">Contact me</a></button>
 
 <p>... Casual icons ...</p>
+
+<style>
+    body { opacity: 1; }
+</style>
 
 
     </div>

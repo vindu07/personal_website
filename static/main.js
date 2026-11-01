@@ -1,50 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    var theme = getCookie("theme");
-    if(theme == "dark") document.body.classList.add("dark");
-    
-    /* ACTIVE PAGE HIGHLIGHTING */
-    try{
-        let currPage = document.location.pathname.slice(1); // removes "/" at start
-        if(currPage == "") currPage = "home";
+  /*DETECT DEVICE THEME*/
+  const darkThemePreferred = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ?? false;
+  if(darkThemePreferred) localStorage.setItem("preferred-theme", "dark");
 
-        //removes end "/" if present (problems with github)
-        if(currPage.charAt(currPage.length -1) == "/") currPage = currPage.substring(0, currPage.length -1);
+  // set saved theme
+  var theme = localStorage.getItem("theme");
+  var preferred_theme = localStorage.getItem("preferred-theme");
+  if(theme == "dark" || preferred_theme == "dark" && theme != "light") document.body.classList.add("dark");
+  
+  /* ACTIVE PAGE HIGHLIGHTING */
+  try{
+      let currPage = document.location.pathname.slice(1); // removes "/" at start
+      if(currPage == "") currPage = "home";
 
-        //console.log(currPage); //debug
-        
-        const activeBtn = document.querySelector(`header nav #${currPage}`);
-        activeBtn.classList.add("active");
+      //removes end "/" if present (problems with github)
+      if(currPage.charAt(currPage.length -1) == "/") currPage = currPage.substring(0, currPage.length -1);
 
-    } catch(ex) {
-        console.error("_ERR -- Active page highlighting -- " + ex.toString());
-    }
+      //console.log(currPage); //debug
+      
+      const activeBtn = document.querySelector(`header nav #${currPage}`);
+      activeBtn.classList.add("active");
 
-    /* SETTINGS */
-    const themeBtn = document.querySelector("header #theme-btn");
-    const langBtn = document.querySelector("header #lang-btn");
+  } catch(ex) {
+      console.error("_ERR -- Active page highlighting -- " + ex.toString());
+  }
 
-    themeBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
+  /* SETTINGS */
+  const themeBtn = document.querySelector("header #theme-btn");
+  const langBtn = document.querySelector("header #lang-btn");
 
-        if(getCookie("theme") == "dark") document.cookie  = "theme ="
-        else document.cookie = "theme = dark";
-    });
+  themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if(localStorage.getItem("theme") == "dark") localStorage.setItem("theme", "light");
+      else localStorage.setItem("theme", "dark");
+  });
   
 });
-
-// gets the cookie with specified name
-function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}

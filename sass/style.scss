@@ -19,7 +19,6 @@ body.dark {
     --button-bg: #767474;
 }
 
-
 body {
     margin: 0;
     height: 100vh;
@@ -34,6 +33,7 @@ li {
 
 button {
     border: 0; margin: 0; padding: 0;
+    border-radius: 1rem; padding: 0.5rem; padding-right: 0.5rem;
     background: var(--button-bg);
     color: var(--text);
 
@@ -43,7 +43,7 @@ button {
     }
     :hover {
         filter: brightness(120%);
-        transform: scale(1.03);
+        transform: translateY(-0.1rem);
         transition: ease; transition-duration: 500ms;
     }
 }
@@ -119,15 +119,18 @@ header #logo-img {
 
 main{
     padding: 2rem;
+    
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 
 footer {
-    position: absolute; bottom: 0; left: 0; right: 0;
+    position: absolute; bottom: -100%; left: 0; right: 0;
     padding: 0.2rem;
     display: flex; flex-direction: row; justify-content: center;
 
-    filter:brightness(50%);
+    filter:opacity(30%);
 
     span {
         display: flex; flex-direction: row; gap: 1rem; 

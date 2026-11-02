@@ -7,10 +7,10 @@
 
   <link href="/style.css" rel="stylesheet">
 
-  <link rel="prefetch" href="/about" as="document">
-  <link rel="prefetch" href="/skills" as="document">
-  <link rel="prefetch" href="/projects" as="document">
-  <link rel="prefetch" href="/contact" as="document">
+  <link rel="prefetch" href="/about/index.html" as="document">
+  <link rel="prefetch" href="/skills/index.html" as="document">
+  <link rel="prefetch" href="/projects/index.html" as="document">
+  <link rel="prefetch" href="/contact/index.html" as="document">
 </head>
 
 <body class="">
@@ -20,6 +20,12 @@
     <div class="groups">
       <button id="logo-btn">
         <img id="logo-img" src="/icons/logo.svg" alt="logo" height="1rem" width="1rem"></img>
+        
+        <div id="settings-submenu">
+          <li id="theme-btn"><img id="theme-img" src="" alt="theme"></li>
+          <li id="lang-btn"><img id="lang-img" src="" alt="lang"></li>
+        </div>
+      
       </button>
     </div>
 
@@ -47,15 +53,11 @@
     </nav>
 
     <div class="groups">
-      <button id="settings-btn">
-        <img id="settings-img" src="" alt="settings">
-        <div id="settings-submenu">
-          <li id="theme-btn"><img id="theme-img" src="" alt="theme"></li>
-          <li id="lang-btn"><img id="lang-img" src="" alt="lang"></li>
-        </div>
-      </button>
-      <button id="download-cv-btn" class="accent">
-        <a href="/documents/Andrea_Vinduska.pdf" download>
+      
+        
+      
+      <button id="download-cv-btn" class="accent-bg dynamic">
+        <a href="/documents/Andrea_Vinduska_en.pdf" download>
           <p>Download CV</p>
         </a>
       </button>
@@ -67,24 +69,51 @@
   <main>
     <div>
       
+<div id="container">
+    <h4 class="accent-txt">HELLO, I'M</h4>
 
-<h3>HELLO, I'M</h3>
+    <div id="name">
+        <h1>Andrea Vinduska</h1>
+        <h3 class="accent-txt"><i>Industrial Engineering Student</i></h3>
+    </div>
 
-<h1>Andrea Vinduska</h1>
+    <span id="separator" class="accent-bg"></span>
 
-<h2>Industrial Engineering Student</h2>
+    <div id="desc">
+        <p>Curious about how things work. Passionate about robotics,</p>
+        <p>mechatronics, and solving real-world problems.</p>
+    </div>
 
-<p>Passionate about tech and whatever involves building things</p>
+    <div id="buttons">
+        <button class="accent-bg dynamic"><a href="/projects"><h6>View my work</h6></a></button>
+        <button class="dynamic"><a href="/contact"><h6>Contact me</h6></a></button>
+    </div>
 
-
-<button><a href="/projects">View my work -></a></button>
-<button><a href="/contact">Contact me</a></button>
-
-<p>... Casual icons ...</p>
+    <div id="icons">
+        <p></p>
+    </div>
+</div>
 
 <style>
-    body { opacity: 1; }
+    #container {
+        display: flex; flex-direction: column; gap: 2rem;
+    }
+    #name {
+        display: flex; flex-direction: column; gap: 0;
+    }
+    #desc {
+        display: flex; flex-direction: column; gap: .5rem;
+    }
+    #buttons {
+        display: flex; flex-direction: row; gap: 2rem;
+    }
+    #separator {
+        height: 0.25rem;
+        width: 3rem;
+        border-radius: 0.2rem;
+    }
 </style>
+
 
 
     </div>

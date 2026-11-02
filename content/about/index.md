@@ -1,6 +1,4 @@
 +++
-title = "About"
-template = "page.html"
+title = "Curious. Problem solver."
+template = "about.html"
 +++
-
-I'm a student, ...

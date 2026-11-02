@@ -1,6 +1,5 @@
 +++
-title = "Contact me"
-template = "page.html"
+title = ""
+template = "contact.html"
 +++
 
-These are my contacts

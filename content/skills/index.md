@@ -1,6 +1,4 @@
 +++
-title = "Skills"
-template = "page.html"
+title = "Technologies I work with"
+template = "skills.html"
 +++
-
-These are my skills

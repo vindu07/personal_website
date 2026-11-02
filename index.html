@@ -70,18 +70,19 @@
     <div>
       
 <div id="container">
-    <h4 class="accent-txt">HELLO, I'M</h4>
+    <h4>HELLO, I'M</h4>
 
     <div id="name">
         <h1>Andrea Vinduska</h1>
         <h3 class="accent-txt"><i>Industrial Engineering Student</i></h3>
+        <span id="separator" class="accent-bg"></span>
     </div>
 
-    <span id="separator" class="accent-bg"></span>
+    
 
     <div id="desc">
-        <p>Curious about how things work. Passionate about robotics,</p>
-        <p>mechatronics, and solving real-world problems.</p>
+        <p>Curious about how things work. Passionate about robotics, 
+            mechatronics, and solving real-world problems.  <a class="accent-txt" href="/about"><h6>Read more...</h6></a></p>
     </div>
 
     <div id="buttons">
@@ -97,6 +98,7 @@
 <style>
     #container {
         display: flex; flex-direction: column; gap: 2rem;
+        max-width: 60%;
     }
     #name {
         display: flex; flex-direction: column; gap: 0;
@@ -110,7 +112,7 @@
     #separator {
         height: 0.25rem;
         width: 3rem;
-        border-radius: 0.2rem;
+        border-radius: 0.2rem; margin-top: .5rem;
     }
 </style>
 

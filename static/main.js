@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* THEME */
-  const themeBtn = document.querySelector("header #logo-btn");
+  const themeBtn = document.querySelector("footer #theme-btn");
 
   themeBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark");

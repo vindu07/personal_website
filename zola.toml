@@ -12,5 +12,5 @@ build_search_index = true
 [extra]
 # Put all your custom variables here
 
-language_code = "it"
+language_code = "en"
 title = "Andrea Vinduska's Website"

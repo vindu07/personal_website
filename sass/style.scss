@@ -82,6 +82,8 @@ button {
     color: var(--text);
     transition: .5s ease;
 
+    display: flex; flex-direction: row; gap: .5rem; align-items: center;
+
 }
 button.dynamic:hover {
     filter: brightness(110%);

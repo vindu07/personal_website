@@ -19,35 +19,35 @@
 
     <div class="groups">
       <button id="logo-btn">
-        <img id="logo-img" src="/icons/logo.svg" alt="logo" height="1rem" width="1rem"></img>
-        
-        <div id="settings-submenu">
-          <li id="theme-btn"><img id="theme-img" src="" alt="theme"></li>
-          <li id="lang-btn"><img id="lang-img" src="" alt="lang"></li>
-        </div>
+        <svg id="logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+          <path d="M5.61864,13.48996c-0.69036,1.19573 -2.21933,1.60542 -3.41506,0.91506v0c-1.19573,-0.69036 -1.60542,-2.21933 -0.91506,-3.41506l5,-8.66025c0.69036,-1.19573 2.21933,-1.60542 3.41506,-0.91506v0c1.19573,0.69036 1.60542,2.21933 0.91506,3.41506z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter" fill-rule="evenodd"/>
+          <path d="M10.81867,11.43625c-0.69036,-1.19573 -0.28067,-2.72471 0.91506,-3.41506v0c1.19573,-0.69036 2.72471,-0.28067 3.41506,0.91506l1.25,2.16506c0.69036,1.19573 0.28067,2.72471 -0.91506,3.41506v0c-1.19573,0.69036 -2.72471,0.28067 -3.41506,-0.91506z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter" fill-rule="evenodd"/>
+          <path d="M26.39329,2.20232c0.69036,-1.19573 2.21933,-1.60542 3.41506,-0.91506v0c1.19573,0.69036 1.60542,2.21933 0.91506,3.41506l-1.25,2.16506c-0.69036,1.19573 -2.21933,1.60542 -3.41506,0.91506v0c-1.19573,-0.69036 -1.60542,-2.21933 -0.91506,-3.41506z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter" fill-rule="evenodd"/>
+          <path d="M15.57802,4.81548c-0.69036,-1.19573 -0.28067,-2.72471 0.91506,-3.41506v0c1.19573,-0.69036 2.72471,-0.28067 3.41506,0.91506l5,8.66025c0.69036,1.19573 0.28067,2.72471 -0.91506,3.41506v0c-1.19573,0.69036 -2.72471,0.28067 -3.41506,-0.91506z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter" fill-rule="evenodd"/>
+        </svg>
       
       </button>
     </div>
 
     <nav>
       <span id="home">
-        <a href="/">Home</a>
+        <a href="/"><h4>Home</h4></a>
         <div class="indicators"></div>
       </span>
       <span id="about">
-        <a href="/about">About</a>
+        <a href="/about"><h4>About</h4></a>
         <div class="indicators"></div>
       </span>
       <span id="skills">
-        <a href="/skills">Skills</a>
+        <a href="/skills"><h4>Skills</h4></a>
         <div class="indicators"></div>
       </span>
       <span id="projects">
-        <a href="/projects">Projects</a>
+        <a href="/projects"><h4>Projects</h4></a>
         <div class="indicators"></div>
       </span>
       <span id="contact">
-        <a href="/contact">Contact</a>
+        <a href="/contact"><h4>Contact</h4></a>
         <div class="indicators"></div>
       </span>
     </nav>
@@ -58,7 +58,7 @@
       
       <button id="download-cv-btn" class="accent-bg dynamic">
         <a href="/documents/Andrea_Vinduska_en.pdf" download>
-          <p>Download CV</p>
+          <h5><b>Download CV</b></h5>
         </a>
       </button>
     </div>
@@ -69,39 +69,21 @@
   <main>
     <div>
       
-<div id="container">
+<div class="page-container">
     <h4><a class="accent-txt" href="/">HOME</a> > ABOUT ME</h4>
 
-    <div id="name">
+    <div class="page-name">
         <h1>Curious. Problem solver.</h1>
-        <span id="separator" class="accent-bg"></span>
+        <span class="page-separator accent-bg"></span>
     </div>
 
-    <div id="desc">
-        <p>I’m an Industrial Engineering student in Trento, deeply passionate about robotics, mechatronics, and applied sciences. I thrive on turning ideas into reality - whether through coding, 3D modeling and printing, or hands-on prototyping. Beyond my projects, I recharge with outdoor adventures like hiking and skiing.</p>
-        <p>Community matters to me, too. That's why I volunteer with Siror’s 'CTC' and am currently training to join the Primiero Volunteer Fire Department. For me, engineering isn’t just about building solutions - it’s about building a better world.</p>
+    <div class="page-desc">
+        <p>I’m an <a class="accent-txt" href="https://www.dii.unitn.it/">Industrial Engineering</a> student in Trento, deeply passionate about robotics, mechatronics, and applied sciences. </p>
+        <p>I thrive on turning ideas into reality - whether through coding, 3D modeling and printing, or hands-on prototyping. Beyond my projects, I recharge with outdoor adventures like hiking and skiing.</p>
+        <p>Community matters to me, too. That's why I volunteer with <a class="accent-txt" href="https://comitatosiror.it/">'<abbr title="Comitato Tradizione e Cultura">CTC</abbr> Siror'</a> and am currently training to join the <a class="accent-txt" href="https://www.vvfprimiero.it/">Primiero Volunteer Fire Department</a>. For me, engineering isn’t just about building solutions - it’s about building a better world.</p>
     </div>
 
 </div>
-
-<style>
-    #container {
-        display: flex; flex-direction: column; gap: 2rem;
-        max-width: 80%;
-    }
-    #name {
-        display: flex; flex-direction: column; gap: 0;
-    }
-    #desc {
-        display: flex; flex-direction: column; gap: .5rem;
-    }
-    #separator {
-        height: 0.25rem;
-        width: 3rem;
-        border-radius: 0.2rem; margin-top: .5rem;
-    }
-</style>
-
 
 
     </div>
@@ -112,7 +94,9 @@
       <p>© 2026 Andrea Vinduska</p>
       <p>|</p>
       <p>Powered by</p>
-      <p><a href="https://www.getzola.org/">Zola</a></p>
+      <p><a href="https://www.getzola.org/"><u>Zola</u></a></p>
+      <p>and</p>
+      <p><a href="https://freeicon.com/"><u>Freeicon</u></a></p>
     </span>
   </footer>
   

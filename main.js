@@ -26,9 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("_ERR -- Active page highlighting -- " + ex.toString());
   }
 
-  /* SETTINGS */
-  const themeBtn = document.querySelector("header #theme-btn");
-  const langBtn = document.querySelector("header #lang-btn");
+  /* THEME */
+  const themeBtn = document.querySelector("header #logo-btn");
 
   themeBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark");

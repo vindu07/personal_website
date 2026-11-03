@@ -1,52 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="container">
+<div class="page-container">
     <h4>HELLO, I'M</h4>
 
-    <div id="name">
+    <div class="page-name">
         <h1>Andrea Vinduska</h1>
         <h3 class="accent-txt"><i>Industrial Engineering Student</i></h3>
-        <span id="separator" class="accent-bg"></span>
+        <span class="page-separator accent-bg"></span>
     </div>
 
     
 
-    <div id="desc">
+    <div class="page-desc">
         <p>Curious about how things work. Passionate about robotics, 
             mechatronics, and solving real-world problems.  <a class="accent-txt" href="/about"><h6>Read more...</h6></a></p>
     </div>
 
-    <div id="buttons">
-        <button class="accent-bg dynamic"><a href="/projects"><h6>View my work</h6></a></button>
-        <button class="dynamic"><a href="/contact"><h6>Contact me</h6></a></button>
+    <div class="page-buttons">
+        <button class="accent-bg dynamic"><a href="/projects"><h6><b>View my work</b></h6></a></button>
+        <button class="dynamic"><a href="/contact"><h6><b>Contact me</b></h6></a></button>
     </div>
 
-    <div id="icons">
+    <div class="page-icons">
         <p></p>
     </div>
 </div>
-
-<style>
-    #container {
-        display: flex; flex-direction: column; gap: 2rem;
-        max-width: 60%;
-    }
-    #name {
-        display: flex; flex-direction: column; gap: 0;
-    }
-    #desc {
-        display: flex; flex-direction: column; gap: .5rem;
-    }
-    #buttons {
-        display: flex; flex-direction: row; gap: 2rem;
-    }
-    #separator {
-        height: 0.25rem;
-        width: 3rem;
-        border-radius: 0.2rem; margin-top: .5rem;
-    }
-</style>
-
 
 {% endblock content %}

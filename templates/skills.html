@@ -1,31 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="container">
+<div class="page-container">
     <h4><a class="accent-txt" href="/">HOME</a> > MY SKILLS</h4>
 
-    <div id="name">
+    <div class="page-name">
         <h1>{{page.title}}</h1>
-        <span id="separator" class="accent-bg"></span>
+        <span class="page-separator accent-bg"></span>
     </div>
+
+    <div id="skill-container"></div>
 
 
 </div>
-
-<style>
-    #container {
-        display: flex; flex-direction: column; gap: 2rem;
-        max-width: 80%;
-    }
-    #name {
-        display: flex; flex-direction: column; gap: 0;
-    }
-    #separator {
-        height: 0.25rem;
-        width: 3rem;
-        border-radius: 0.2rem; margin-top: .5rem;
-    }
-</style>
-
 
 {% endblock content %}

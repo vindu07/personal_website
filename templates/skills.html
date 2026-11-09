@@ -117,6 +117,13 @@
         border-bottom-left-radius: .5rem;
         transition: width 3s;
     }
+
+    @media (max-width: 800px) {
+        #skill-container {
+        display: grid; gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr; 
+        }
+    }
 </style>
 
 {% endblock content %}

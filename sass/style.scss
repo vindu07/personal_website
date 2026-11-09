@@ -6,6 +6,7 @@
     
 body {
     margin: 0;
+    padding: 0;
     height: 100vh;
     
     background: var(--body-bg);
@@ -82,7 +83,7 @@ header {
     }      
 }
 header nav {
-    flex: .9;
+    flex: .8;
     display: flex; flex-direction: row;
     justify-content: space-between;
 
@@ -139,6 +140,9 @@ footer {
     p {
         padding: 0; margin: 0; border: none;
     }
+    div {
+        display: block; gap: 1rem;
+    }
 }
 
 
@@ -155,7 +159,6 @@ footer {
 /* PAGES */
 .page-container {
     display: flex; flex-direction: column; gap: 2rem;
-    max-width: 75%;
 }
 .page-name {
     display: flex; flex-direction: column; gap: 0;
@@ -178,6 +181,9 @@ footer {
     header nav {
         display:none;
     }
+    main {
+        width: 80%;
+    } 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -192,3 +198,4 @@ footer {
     transition: none !important;
   }
 }
+

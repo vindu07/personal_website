@@ -81,15 +81,79 @@
     <div>
       
 <div class="page-container">
-    <h4><a class="accent-txt" href="/">HOME</a> > MY PROJECTS</h4>
+    <h4><a class="accent-txt" href="/">HOME</a> &gt; MY PROJECTS</h4>
 
     <div class="page-name">
         <h1>What I&#39;ve built</h1>
         <span class="page-separator accent-bg"></span>
     </div>
 
+    <div id="project-container">
+
+       
+
+            <div class="project-div">
+                <a href="site.andreavinduska.it/projects/3dprints/"></a>
+                    <img class="project-img" src="/static/images/" />
+                    <h3>3D prints</h3>
+                </a>
+            </div>
+
+       
+
+            <div class="project-div">
+                <a href="site.andreavinduska.it/projects/watchface/"></a>
+                    <img class="project-img" src="/static/images/" />
+                    <h3>Watchface</h3>
+                </a>
+            </div>
+
+       
+
+    </div>
 
 </div>
+
+<style>
+
+    #project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        padding-top: 1rem;
+    }
+
+    .project-div {
+        display: flex; flex-direction: column; gap: 1rem;
+        align-items: center; 
+    }
+
+    .project-img {
+        
+        width: 8rem;
+        height: 8rem;
+  
+        border-radius: 1rem;
+    }
+
+    @media (max-width: 800px) {
+        #project-container {
+            grid-template-columns: 1fr 1fr;
+        }
+        .project-img {
+        
+            width: 6rem;
+            height: 6rem;
+    
+            border-radius: 1rem;
+        }
+        h3 {
+            transform: scale(0.8);
+        }
+    }
+
+</style>
 
 
     </div>
@@ -102,8 +166,9 @@
       </div>
       <p>|</p>
       <div>
-        <p id="theme-btn"><a href=""><u>Change theme</u></a></p>
-        <p id="theme-btn"><a href="/privacy"><u>Privacy</u></a></p>
+        <p id="theme-btn"><a href=""><u>Change Theme</u></a></p>
+        <p id="lang-btn"><a href="/it"><u>Italiano</u></a></p>
+        <p id="privacy-btn"><a href="/privacy"><u>Privacy</u></a></p>
       </div>
       <p>|</p>
       <div>

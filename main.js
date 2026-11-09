@@ -29,8 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ACTIVE PAGE HIGHLIGHTING */
     try{
         let currPage = document.location.pathname.slice(1); // removes "/" at start
-        if(currPage == "") currPage = "home";
+        if(currPage.charAt(0) == 'i') currPage = currPage.substring(3, currPage.length); // removes 'it/' if present
 
+        if(currPage == "") currPage = "home";
+        
         //removes end "/" if present (problems with github)
         if(currPage.charAt(currPage.length -1) == "/") currPage = currPage.substring(0, currPage.length -1);
 

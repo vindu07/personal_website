@@ -1,21 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://github.com/vindu07.github.io/personal_website/</loc>
+        <loc>site.andreavinduska.it/</loc>
     </url>
     <url>
-        <loc>https://github.com/vindu07.github.io/personal_website/about/</loc>
+        <loc>site.andreavinduska.it/about/</loc>
     </url>
     <url>
-        <loc>https://github.com/vindu07.github.io/personal_website/contact/</loc>
+        <loc>site.andreavinduska.it/contact/</loc>
     </url>
     <url>
-        <loc>https://github.com/vindu07.github.io/personal_website/privacy/</loc>
+        <loc>site.andreavinduska.it/it/</loc>
     </url>
     <url>
-        <loc>https://github.com/vindu07.github.io/personal_website/projects/</loc>
+        <loc>site.andreavinduska.it/it/about/</loc>
     </url>
     <url>
-        <loc>https://github.com/vindu07.github.io/personal_website/skills/</loc>
+        <loc>site.andreavinduska.it/it/contact/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/it/privacy/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/it/projects/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/it/projects/3dprints/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/it/projects/watchface/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/it/skills/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/privacy/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/projects/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/projects/3dprints/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/projects/watchface/</loc>
+    </url>
+    <url>
+        <loc>site.andreavinduska.it/skills/</loc>
     </url>
 </urlset>

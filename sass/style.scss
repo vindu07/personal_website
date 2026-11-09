@@ -2,6 +2,8 @@
     padding: 0; margin: 0;
 }
 
+//default - large screens
+    
 body {
     margin: 0;
     height: 100vh;
@@ -80,8 +82,9 @@ header {
     }      
 }
 header nav {
+    flex: .9;
     display: flex; flex-direction: row;
-    gap: 3rem;
+    justify-content: space-between;
 
     span {
         display: flex; flex-direction: column;
@@ -167,4 +170,25 @@ footer {
     height: 0.25rem;
     width: 3rem;
     border-radius: 0.2rem; margin-top: .5rem;
+}
+
+
+/* Small - medium */
+@media only screen and (max-width: 800px) {
+    header nav {
+        display:none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

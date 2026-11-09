@@ -87,6 +87,8 @@ header nav {
     display: flex; flex-direction: row;
     justify-content: space-between;
 
+    max-width: 500px;
+
     span {
         display: flex; flex-direction: column;
         align-items: center; gap: 0.25rem;
@@ -129,7 +131,8 @@ footer {
     position: relative; bottom: 0; left: 0; right: 0;
     
     padding: 0.2rem; margin-top: 3rem;
-    display: flex; flex-direction: row; justify-content: center;
+    display: flex; flex-direction: row; 
+    justify-content: center;
 
     filter:opacity(50%);
 
@@ -141,7 +144,7 @@ footer {
         padding: 0; margin: 0; border: none;
     }
     div {
-        display: block; gap: 1rem;
+        display: flex; gap: 1rem;
     }
 }
 
@@ -183,14 +186,15 @@ footer {
     }
     main {
         width: 80%;
-    } 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-
-}
+    }
+    footer {
+        left: 10vw; right: 10vw;
+        max-width: 80vw;
+    }
+    footer div {
+        flex-direction: column; gap: .5rem;
+    }
+}   
 
 @media (prefers-reduced-motion: reduce) {
   * {

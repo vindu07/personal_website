@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://github.com/vindu07.github.io/personal_website"
+base_url = "site.andreavinduska.it"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -12,5 +12,86 @@ build_search_index = true
 [extra]
 # Put all your custom variables here
 
-language_code = "en"
+
 title = "Andrea Vinduska's Website"
+
+languages = [
+    {code = "en"},
+    {code = "it"}
+]   
+
+default_language = "en"
+
+[translations]
+
+nav1 = "Home"
+nav2 = "About"
+nav3 = "Skills"
+nav4 = "Projects"
+nav5 = "Contact"
+
+href1 = "/"
+href2 = "/about"
+href3 = "/skills"
+href4 = "/projects"
+href5 = "/contact"
+href6 = "/documents/Andrea_Vinduska_en.pdf"
+href7 = "/privacy"
+href8 = "/it"
+
+
+btn1 = "Download CV"
+btn2 = "Change Theme"
+btn3 = "Powered by"
+btn6 = "Italiano"
+
+## index
+preTitle = "HELLO, I'M"
+subTitle = "Industrial Engineering Student"
+desc = "Curious about how things work. Passionate about robotics, mechatronics, and solving real-world problems."
+link1 = "Read more..."
+btn4 = "My projects"
+btn5 = "Contact me"
+
+## 404
+desc-404 = "Oops! This page does not exist"
+btn-404 = "Back to home"
+
+work-in-progress = "Content available soon..."
+
+
+[languages.it.translations]
+
+nav1 = "Home"
+nav2 = "Su di me"
+nav3 = "Competenze"
+nav4 = "Progetti"
+nav5 = "Contatti"
+
+href1 = "/it"
+href2 = "/it/about"
+href3 = "/it/skills"
+href4 = "/it/projects"
+href5 = "/it/contact"
+href6 = "/documents/Andrea_Vinduska_it.pdf"
+href7 = "/it/privacy"
+href8 = "/"
+
+btn1 = "Scarica CV"
+btn2 = "Cambia Tema"
+btn3 = "Creato con"
+btn6 = "English"
+
+## index
+preTitle = "CIAO, SONO"
+subTitle = "Studente di Ingegneria Industriale"
+desc = "Curiouso di capire il funzionamento di ciò che mi circonda. Affascinato da robotica, meccatronica e risoluzione di problemi concreti."
+link1 = "Leggi di più..."
+btn4 = "Progetti"
+btn5 = "Contatti"
+
+## 404
+desc-404 = "Oops! Questa pagina non esiste"
+btn-404 = "Torna al sito"
+
+work-in-progress = "Contenuto presto disponibile..."

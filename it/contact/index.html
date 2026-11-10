@@ -20,7 +20,12 @@
   <link rel="prefetch" href="/contact"/>
   <link rel="prefetch" href="/privacy"/>
 
-  <link rel="preload" href="/static/documents/Andrea_Vinduska_en.pdf"/>
+  <link rel="preload" as="style" href="/style.css"/>
+  <link rel="preload" as="style" href="/theme.css"/>
+  <link rel="preload" as="style" href="/font.css"/>
+  <link rel="preload" as="script" href="/main.js"/>
+  <link rel="preload" as="image/pdf" href="/static/documents/Andrea_Vinduska_en.pdf"/>
+  <link rel="preload" as="image/pdf" href="/static/documents/Andrea_Vinduska_it.pdf"/>
 </head>
 
 <body>
@@ -244,8 +249,8 @@
       </div>
       <p>|</p>
       <div>
-        <p id="theme-btn"><a href=""><u>Cambia Tema</u></a></p>
-        <p id="lang-btn"><a href="/"><u>English</u></a></p>
+        <p id="theme-btn"><a class="pointer"><u>Cambia Tema</u></a></p>
+        <p id="lang-btn"><a class="pointer"><u>English</u></a></p>
         <p id="privacy-btn"><a href="/it/privacy"><u>Privacy</u></a></p>
       </div>
       <p>|</p>

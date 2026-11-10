@@ -26,6 +26,31 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("(•-•)⌐   Theme -- " + e.toString());
     }
 
+    /* LANGUAGE */
+    try {
+
+        const langBtn = document.querySelector("footer #lang-btn");
+
+        langBtn.addEventListener("click", ()=>{
+            
+            let currPath = document.location.pathname;
+            let lang = "/it";
+            let newPath;
+
+            if(currPath.slice(0, 4) == "/it/"){ // if site is in italian
+                
+                currPath = currPath.slice(4, currPath.length); //remove '/it/'
+                lang = "";
+            }
+
+            newPath = lang + currPath;
+            document.location.pathname = newPath;
+        });
+
+    } catch(e) {
+        console.error("(•-•)⌐   Language -- " + e.toString());
+    }
+
     /* ACTIVE PAGE HIGHLIGHTING */
     try{
         let currPage = document.location.pathname.slice(1); // removes "/" at start

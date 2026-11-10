@@ -58,6 +58,7 @@ desc-404 = "Oops! This page does not exist"
 btn-404 = "Back to home"
 
 work-in-progress = "Content available soon..."
+projects = "PROJECTS"
 
 
 [languages.it.translations]
@@ -95,3 +96,4 @@ desc-404 = "Oops! Questa pagina non esiste"
 btn-404 = "Torna al sito"
 
 work-in-progress = "Contenuto presto disponibile..."
+projects = "PROGETTI"

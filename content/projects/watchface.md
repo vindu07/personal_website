@@ -3,5 +3,6 @@ title = "Watchface"
 template = "project.html"
 
 [extra]
-img = ""
+img = "watchface.jpg"
+preTitle = "GARMIN WATCHFACE"
 +++

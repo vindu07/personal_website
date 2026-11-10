@@ -3,5 +3,6 @@ title = "Quadrante"
 template = "project.html"
 
 [extra]
-img = ""
+img = "watchface.jpg"
+preTitle = "QUADRANTE GARMIN"
 +++

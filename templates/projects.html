@@ -14,7 +14,7 @@
        {% for p in section.pages %}
 
             
-            <a class="project-div" href="{{ p.permalink }}">
+            <a class="project-div" href="{{ p.extra.link }}">
                 <img class="project-img" src="/images/{{ p.extra.img }}" />
                 <h3>{{ p.title }}</h3>
             </a>

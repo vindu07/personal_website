@@ -1,6 +1,6 @@
 +++
 title = "Strumenti che utilizzo"
-template = "skills.html"
+template = "pages/skills.html"
 
 [extra]
 parent = "HOME"

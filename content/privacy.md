@@ -1,6 +1,6 @@
 +++
 title = "Privacy policy"
-template = "privacy.html"
+template = "pages/privacy.html"
 
 [extra]
 parent = "HOME"

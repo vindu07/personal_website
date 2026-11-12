@@ -1,6 +1,6 @@
 +++
 title = "What I've built"
-template = "projects.html"
+template = "pages/projects.html"
 
 [extra]
 parent = "HOME"

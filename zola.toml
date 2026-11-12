@@ -8,7 +8,6 @@ compile_sass = true
 build_search_index = true
 
 
-
 [extra]
 # Put all your custom variables here
 

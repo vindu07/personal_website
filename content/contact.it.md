@@ -1,6 +1,6 @@
 +++
 title = "Collaboriamo"
-template = "contact.html"
+template = "pages/contact.html"
 
 [extra]
 parent = "HOME"

@@ -92,22 +92,21 @@
   </main>
 
   <footer>
-    <span>
-      <div>
-        <p>© 2026 Andrea Vinduska</p>
-      </div>
-      <p>|</p>
-      <div>
-        <p id="theme-btn"><a class="pointer"><u>{{ trans(key="btn2") }}</u></a></p>
-        <p id="lang-btn"><a class="pointer"><u>{{ trans(key="btn6") }}</u></a></p>
-        <p id="privacy-btn"><a href="{{ trans(key='href7', lang=lang) }}"><u>Privacy</u></a></p>
-      </div>
-      <p>|</p>
-      <div>
-        <p>{{ trans(key="btn3") }}</p>
-        <p><a href="https://www.getzola.org/"><u>Zola</u></a></p>
-      </div>
-    </span>
+    
+    <div>
+      <p>© 2026 Andrea Vinduska</p>
+    </div>
+    <p class="footer-separator">|</p>
+    <div>
+      <p id="theme-btn"><a class="pointer accent-txt"><u>{{ trans(key="btn2") }}</u></a></p>
+      <p id="lang-btn"><a class="pointer accent-txt"><u>{{ trans(key="btn6") }}</u></a></p>
+      <p id="privacy-btn"><a class="accent-txt" href="{{ trans(key='href7', lang=lang) }}"><u>Privacy</u></a></p>
+    </div>
+    <p class="footer-separator">|</p>
+    <div>
+      <p>{{ trans(key="btn3") }} <a href="https://www.getzola.org/"><u>Zola</u></a></p>
+    </div>
+    
   </footer>
   
 </body>

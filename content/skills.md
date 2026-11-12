@@ -1,6 +1,6 @@
 +++
 title = "Technologies I work with"
-template = "skills.html"
+template = "pages/skills.html"
 
 [extra]
 parent = "HOME"

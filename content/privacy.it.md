@@ -1,6 +1,6 @@
 +++
 title = "Informativa Privacy"
-template = "privacy.html"
+template = "pages/privacy.html"
 
 [extra]
 parent = "HOME"

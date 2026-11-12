@@ -17,13 +17,23 @@
         <span class="page-separator accent-bg"></span>
     </div>
 
+    <div class="page-desc">
 
-    <h3>{{ trans(key="work-in-progress", lang=lang) }}</h3>
+        {{ page.content | safe }}
+
+    </div>
+
+
+    
 
 </div>
 
-<style>
 
+<style>
+    h1, h2, h3, h4 {
+        margin-top: 1rem;
+    }
+    
 </style>
 
 {% endblock content %}

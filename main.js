@@ -7,11 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
     var deviceTheme = darkThemePreferred ? "dark" : "light";
 
     // set saved theme
-    var savedTheme = localStorage.getItem("theme");
-    if(savedTheme == "dark" || deviceTheme == "dark" && savedTheme != "light") 
-        document.body.classList.add("dark");
-    else
-        document.body.classList.add("light");
+    function setSavedTheme(){
+        var savedTheme = localStorage.getItem("theme");
+        if(savedTheme == "dark" || deviceTheme == "dark" && savedTheme != "light"){
+            document.body.classList.remove("light");
+            document.body.classList.add("dark");
+        }
+        else{
+            document.body.classList.remove("dark");
+            document.body.classList.add("light");
+        }
+    }
+    
+    setSavedTheme();
     
     // theme toggle button
     const themeBtn = document.querySelector("footer #theme-btn");
@@ -21,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         var theme = (localStorage.getItem("theme") == "dark") ? "light" : "dark";
         localStorage.setItem("theme", theme);
+
+        setSavedTheme();
     });
     } catch(e) {
         console.error("(•-•)⌐   Theme -- " + e.toString());

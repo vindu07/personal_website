@@ -1,4 +1,5 @@
 +++
+date = 2026-11-12
 title = "Stampe 3D"
 template = "pages/project.html"
 

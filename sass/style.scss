@@ -7,10 +7,10 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    //height: 100vh;
     
     background: var(--body-bg);
-    color: var(--text); 
+    color: var(--text);
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -125,7 +125,7 @@ main{
 
     display: block; gap: 1rem;
 
-    min-height: 100%;
+    min-height: 80vh;
     width: 90vw;
 }
 

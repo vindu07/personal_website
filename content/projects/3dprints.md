@@ -1,4 +1,5 @@
 +++
+date = 2026-11-12
 title = "3D prints"
 template = "pages/project.html"
 
@@ -7,3 +8,11 @@ img = "3d-prints.png"
 link = "/projects/3dprints"
 preTitle = "3D PRINTS"
 +++
+
+### Phone cable winder
+
+### TV replacement supports
+
+### Cable organizer
+
+### Star knobs

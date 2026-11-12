@@ -65,6 +65,8 @@
         </div>
     </div>
 
+    <span class="page-separator accent-bg"></span>
+
     <div class="page-icon-container">
 
         <a class="social-icons" href="https://www.linkedin.com/in/andrea-vinduska-a84226332/">
@@ -137,16 +139,24 @@
 .page-icon-container {
 
     display: flex; flex-direction: row; gap: 1.5rem;
-    align-items: center;
+    align-content: center;
+    transition: .5s;
 }
 
 .social-icons:hover {
 
     transform: translateY(-.1rem);
+    transition: .5s;
 }
 
 .contact-container {
     display: flex; flex-direction: row; gap: 1rem; align-items: center;
+}
+
+@media (max-width: 800px) {
+    .page-icon-container {
+        justify-content: center;
+    }
 }
 
 </style>

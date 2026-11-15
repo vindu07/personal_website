@@ -10,3 +10,8 @@ preTitle = "FOLDING TABLE"
 +++
 
 ### Overview
+
+<img style="height: 10rem;" src="/images/table.png" alt="watchface image"></img>
+
+Wooden folding table I made for my *mountain house*, entirely designed with **sketchUp** and built by myself during 2023 summer.
+

@@ -10,3 +10,7 @@ preTitle = "TAVOLO PIEGHEVOLE"
 +++
 
 ### Descrizione
+
+<img style="height: 10rem;" src="/images/table.png" alt="watchface image"></img>
+
+Tavolo pieghevole in legno, realizzato per il mio *maso*, interamente progettato con **sketchUp** e costruito da me nell'estate 2023.

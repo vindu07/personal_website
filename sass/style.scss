@@ -9,8 +9,10 @@ body {
     padding: 0;
     //height: 100vh;
     
-    background: var(--body-bg);
     color: var(--text);
+    
+    background: var(--body-bg);
+
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -127,6 +129,10 @@ main{
 
     min-height: 80vh;
     width: 90vw;
+
+    //background: var(--body-bg) url("/images/img1.png") no-repeat right top;
+    //background-size: 10rem;
+    //background-blend-mode: luminosity;
 }
 
 

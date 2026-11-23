@@ -4,7 +4,7 @@ title = "Website"
 template = "pages/project.html"
 
 [extra] 
-img = "watchface.png" 
+img = ".png" 
 link = "/projects/website" 
 preTitle = "MY WEBSITE" 
 +++

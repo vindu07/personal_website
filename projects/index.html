@@ -102,9 +102,9 @@
 
             
             <a class="project-div" href="/projects/website">
-                <img class="project-img" src="/images/.png" />
+                <img class="project-img" src="/images/website.png" />
                 <h6>2026</h6>
-                <h3>Website</h3>
+                <div class="project-desc" ><h3>Website</h3></div>
             </a>
         
 
@@ -114,7 +114,7 @@
             <a class="project-div" href="/projects/winder">
                 <img class="project-img" src="/images/winder.png" />
                 <h6>2026</h6>
-                <h3>Cable winder</h3>
+                <div class="project-desc" ><h3>Cable winder</h3></div>
             </a>
         
 
@@ -124,7 +124,7 @@
             <a class="project-div" href="/projects/watchface">
                 <img class="project-img" src="/images/watchface.png" />
                 <h6>2026</h6>
-                <h3>Watchface</h3>
+                <div class="project-desc" ><h3>Watchface</h3></div>
             </a>
         
 
@@ -134,7 +134,7 @@
             <a class="project-div" href="/projects/table">
                 <img class="project-img" src="/images/table.png" />
                 <h6>2023</h6>
-                <h3>Folding table</h3>
+                <div class="project-desc" ><h3>Folding table</h3></div>
             </a>
         
 
@@ -161,7 +161,7 @@
         display: flex; flex-direction: column; gap: .5rem;
         align-items: center; 
 
-        box-shadow: 1px 1px 3px 0px var(--text);
+        box-shadow: 1px 1px 3px 0px var(--accent-1);
     }
 
     .project-img {
@@ -169,7 +169,12 @@
         width: 80%;
         height: auto;
 
+        border-radius: 2rem;
+    }
 
+    .project-desc {
+        display: flex; flex-direction: column;
+        text-align: center;
     }
 
     @media (max-width: 800px) {

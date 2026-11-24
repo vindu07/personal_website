@@ -1,16 +1,20 @@
 body.light {
     --text: #0d0f14;
     --text-2: #fcfcfc;
-    --accent-1: #eba625;
+    --accent-1: #1560bd;
     --body-bg: #fafafa;
     --header-bg: #ffffff;
-    --button-bg: #f3f4f6;
+    --button-bg: #e4e4e4;
+
+    --main-img: url('/images/bg1.png');
 }
 body.dark {
     --text: #fffefe;
     --text-2: #fbfbfb;
-    --accent-1: #54a4ff;
-    --body-bg: #2f2f2f;
+    --accent-1: #eba625;
+    --body-bg: #2a2a2a;
     --header-bg: #333;
     --button-bg: #555;
+
+    --main-img: url('/images/bg1.png');
 }

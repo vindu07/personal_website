@@ -130,9 +130,9 @@ main{
     min-height: 80vh;
     width: 90vw;
 
-    //background: var(--body-bg) url("/images/img1.png") no-repeat right top;
-    //background-size: 10rem;
-    //background-blend-mode: luminosity;
+    //background: var(--body-bg) var(--main-img) no-repeat left top;
+    //background-size: 60vh; 
+    background-attachment: fixed;
 }
 
 

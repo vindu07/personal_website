@@ -17,7 +17,7 @@
             <a class="project-div" href="{{ p.extra.link }}">
                 <img class="project-img" src="/images/{{ p.extra.img }}" />
                 <h6>{{ p.date | truncate(length=4, end="") }}</h6>
-                <h3>{{ p.title }}</h3>
+                <div class="project-desc" ><h3>{{ p.title }}</h3></div>
             </a>
         
 
@@ -44,7 +44,7 @@
         display: flex; flex-direction: column; gap: .5rem;
         align-items: center; 
 
-        box-shadow: 1px 1px 3px 0px var(--text);
+        box-shadow: 1px 1px 3px 0px var(--accent-1);
     }
 
     .project-img {
@@ -52,7 +52,12 @@
         width: 80%;
         height: auto;
 
+        border-radius: 2rem;
+    }
 
+    .project-desc {
+        display: flex; flex-direction: column;
+        text-align: center;
     }
 
     @media (max-width: 800px) {
